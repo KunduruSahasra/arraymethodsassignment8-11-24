@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>adv4</title>
+</head>
+<body>
+    <script>
+        function checkVowelConsonantAlternation(inputString) {
+    const vowels = ['a', 'e', 'i', 'o', 'u'];
+    function isVowel(char) {
+        return vowels.includes(char.toLowerCase());
+    }
+    for (let i = 0; i < inputString.length - 1; i++) {
+        let currentIsVowel = isVowel(inputString[i]);
+        let nextIsVowel = isVowel(inputString[i + 1]);
+        if ((currentIsVowel && nextIsVowel) || (!currentIsVowel && !nextIsVowel)) {
+            console.log("Pattern broken");
+            return;
+        }
+    }
+    console.log("Pattern followed");
+}
+const userInput = prompt("Enter a string to check for vowel-consonant alternation:");
+checkVowelConsonantAlternation(userInput);
+    </script>
+</body>
+</html>

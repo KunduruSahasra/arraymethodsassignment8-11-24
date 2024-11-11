@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced q11 Inventory Management for Expiry Dates </title>
+</head>
+<body>
+    <script>
+        var expiryDay=+prompt("enter the expire day  (representing the day of the year the item expires i.e. (1-365)) : ");
+        var currentDay=+prompt("enter the current day  (representing the day of the year i.e. (1-365)) : ");
+        if(expiryDay<currentDay && expiryDay<=365 && expiryDay>0 && currentDay<=365 && currentDay>0){
+            console.log("expired");
+        }
+        else if (expiryDay>=currentDay  && expiryDay<=365 && expiryDay>0 && currentDay<=365 && currentDay>0){
+            console.log("Not expired");
+        }
+        else{
+            console.log("enter a number between 1 to 365");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>medium Q1</title>
+</head>
+<body>
+    <script>
+        var age=parseInt(prompt("enter the current age of customer"));
+        var income=parseFloat(prompt("enter the income of the customer"));
+        var hasCriminalRecord=prompt("enter true or false").toLowerCase();
+        if(age>=21 && age<=60 && income>20000 && hasCriminalRecord=="false"){
+            console.log("Eligible for loan");
+        }
+        else{
+            console.log("Not eligible")
+        }
+    </script>
+</body>
+</html>

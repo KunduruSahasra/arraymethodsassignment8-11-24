@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>question 1</title>
+</head>
+
+<body>
+    <script>
+        var totalAmount = +prompt("enter the purchase amount of the customer");
+        var discount = 0;
+        if (totalAmount > 500) {
+            totalAmount -= 0.2 * totalAmount;
+            console.log(`Total Amount after discount is $ ${totalAmount}`);
+        }
+        else if (totalAmount > 200 && totalAmount <= 500) {
+            totalAmount -= 0.1 * totalAmount;
+            console.log(`Total Amount after discount is $ ${totalAmount}`);
+        }
+        else if (totalAmount < 200) {
+            console.log(`Total Amount is $ ${totalAmount} `);
+        }
+        else {
+            console.log("enter a number greater then zero ");
+        }
+    </script>
+</body>
+
+</html>

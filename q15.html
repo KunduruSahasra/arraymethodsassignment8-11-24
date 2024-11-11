@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>adv5 digitsum paritychecker</title>
+</head>
+<body>
+    <script>
+        function checkDigitSumParity() {
+    const inputNumber = parseInt(prompt("Enter an integer to check the sum of its digits:"));
+    if (isNaN(inputNumber)) {
+        console.log("Please enter a valid integer.");
+        return;
+    }
+    let sum = 0;
+    let number = Math.abs(inputNumber); 
+    while (number > 0) {
+        sum += number % 10;
+        number = Math.floor(number / 10);
+    }
+    if (sum % 2 === 0) {
+        console.log("Sum is Even");
+    } else {
+        console.log("Sum is Odd");
+    }
+}
+checkDigitSumParity();
+    </script>
+</body>
+</html>

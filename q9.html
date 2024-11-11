@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>medium q9 online shop loyalty points</title>
+</head>
+<body>
+    <script>
+        let purchaseAmount=parseInt(prompt("enter purchase amount in : "));
+        let points=0;
+        if(purchaseAmount<100){
+            points=1*(purchaseAmount/10);
+            console.log(`points obtained is $ ${points}`);
+        }
+        else if(purchaseAmount>=100){
+            points=2*(purchaseAmount/10);
+            console.log(`points obtained is $ ${points}`);
+        }
+        else{
+            console.log("please enter number only!");
+        }
+    </script>
+</body>
+</html>

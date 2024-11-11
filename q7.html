@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> medium q2 sales target</title>
+</head>
+<body>
+    <script>
+        var salesTarget=parseFloat(prompt("enter the sales target in terms of percentage"));
+        var monthlySalary=parseFloat(prompt("enter the monthly salary"));
+        var bonus=0;
+        if(salesTarget>120){
+            bonus=0.2*monthlySalary;
+            console.log(bonus);
+        }
+        else if(salesTarget>=100 && salesTarget<=120){
+            bonus=0.1*monthlySalary;
+            console.log(bonus); 
+        }
+        else if(salesTarget<100){
+            console.log("No Bonus");
+        }
+    </script>
+</body>
+</html>

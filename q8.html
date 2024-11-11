@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>medium Q3 school attendance checker</title>
+</head>
+<body>
+    <script>
+        let totalClasses=parseInt(prompt("enter the total number of classes conducted or held : "));
+        let classesAttended=parseInt(prompt("enter the number of classes attended by student : "));
+        let attendance=(classesAttended/totalClasses)*100;
+        if(attendance>=75){
+            console.log("eligible");
+        }
+        else{
+            console.log("not eligible");
+        }
+    </script>
+</body>
+</html>

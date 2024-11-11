@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>question 4</title>
+</head>
+
+<body>
+    <script>
+        var lateDays = +prompt("enter the number of late days ");
+        var fine=0;
+        if (lateDays >= 1 && lateDays<=5) {
+            fine=2*lateDays;
+            console.log(`Fine to be paid is $ ${fine}`);
+        }
+        else if (lateDays >= 6 && lateDays<=10) {
+            fine=3*lateDays;
+            console.log(`Fine to be paid is $ ${fine}`);
+        }
+        else if (lateDays>10) {
+            fine=5*lateDays;
+            console.log(`Fine to be paid is $ ${fine}`);
+        }
+        else {
+            console.log("enter a number greater than zero");
+        }
+    </script>
+</body>
+
+</html>
